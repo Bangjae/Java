@@ -1,0 +1,22 @@
+public class Ex08_StringBuilder
+{
+	public static void main(String[] args)
+	{
+		StringBuilder buf = new StringBuilder("동해물과");
+		
+		buf.append("백두산이");   // append를 주로 사용
+		System.out.println(buf.toString());
+		
+		buf.append("12345");
+		System.out.println(buf.toString());
+		
+		buf.delete(0 , 4);  // 0~4번재 자리까지
+		System.out.println(buf.toString());
+		
+		buf.replace(4 , 8, "ABC");   // 4~8번째 자리까지
+		System.out.println(buf.toString());
+		
+		buf.reverse();               // 역전
+		System.out.println(buf.toString());
+	}
+}

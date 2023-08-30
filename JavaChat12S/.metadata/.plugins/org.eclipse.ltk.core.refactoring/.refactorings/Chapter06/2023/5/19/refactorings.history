@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Ex05_for&apos; to &apos;Ex05_For&apos;&#x0A;- Original project: &apos;Chapter06&apos;&#x0A;- Original element: &apos;Ex05_for&apos;&#x0A;- Renamed element: &apos;Ex05_For&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ex05_for&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Ex05_for.java[Ex05_for" matchStrategy="1" name="Ex05_For" qualified="false" references="true" similarDeclarations="false" stamp="1683528660020" textual="false" version="1.0"/>
+</session>

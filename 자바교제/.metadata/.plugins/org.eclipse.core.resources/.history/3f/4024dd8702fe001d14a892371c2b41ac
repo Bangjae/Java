@@ -1,0 +1,23 @@
+public class Ex09_UtilMethod
+{
+	public static void main(String[] args)
+	{
+		/*
+		JDK1.5이후 버전에서의 코딩형태
+		오토박싱 혹은 오토언박싱이 지원되므로 기본자료형 변수를
+		선언하는것과 동일하게 코딩할 수 있다. 
+		 */
+		//별도의 형변환이나 처리없이 사용할 수 있다.
+		Integer n1 = Integer.valueOf(5);			// 메서드 오버로딩 
+		Integer n2 = Integer.valueOf("1024");		// 메서드 오버로딩 
+		
+		System.out.println("큰 수: " + Integer.max(n1, n2));
+		System.out.println("작은 수: " + Integer.min(n1, n2));
+		System.out.println("합: " + Integer.sum(n1, n2));
+		System.out.println();
+		
+		System.out.println("12의 2진 표현: 0B" + Integer.toBinaryString(12));
+		System.out.println("12의 8진 표현: 0" + Integer.toOctalString(12));
+		System.out.println("12의 16진 표현: 0x"+ Integer.toHexString(12));
+	}
+}

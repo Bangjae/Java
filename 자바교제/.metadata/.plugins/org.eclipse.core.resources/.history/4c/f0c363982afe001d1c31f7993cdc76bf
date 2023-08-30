@@ -1,0 +1,35 @@
+enum Human2 { MAN, WOMAN }
+
+enum Machine2 { TANK, AIRPLANE }
+
+public class Ex02_Enum
+{
+
+	public static void main(String[] args)
+	{
+		createUnit(Machine2.AIRPLANE);
+		
+		//createUnit(Human1.MAN);    // 잘못된 상수 사용 : 에러
+		
+		// 참고 : C처럼 숫자로 비교하면 에러가 난다.
+//		if (Human2.MAN == 0)  // -> 객체이므로 맞지않음.
+//		{
+//			
+//		}
+	}
+	
+	public static void createUnit(Machine2 kind) 
+	{
+		switch(kind) 
+		{
+		//case Machine1.TANK:  
+		//enum을 사용해 열거형을 만들때 switch 에서 achine2 생략 가능
+		case TANK:
+			System.out.println("탱크를 만듭니다.");
+			break;
+		case AIRPLANE:
+			System.out.println("비행기를 만듭니다.");
+			break;
+		}
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;MultiServer2&apos; to &apos;MultiServer3&apos;&#x0D;&#x0A;- Original project: &apos;JavaChat08S&apos;&#x0D;&#x0A;- Original element: &apos;MultiServer2&apos;&#x0D;&#x0A;- Renamed element: &apos;MultiServer3&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MultiServer2&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{MultiServer2.java[MultiServer2" matchStrategy="1" name="MultiServer3" qualified="false" references="true" similarDeclarations="false" stamp="1687852032688" textual="false" version="1.0"/>
+</session>

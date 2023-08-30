@@ -1,0 +1,19 @@
+import java.util.Iterator;
+
+public class Ex03_Vararg
+{
+	public static void helloEverybody(String... vargs) 
+	// ... 는 가변인자 vargs를 배욜의 참조변수로 간주
+	{
+		for (String s : vargs)
+			System.out.print(s + '\t');
+		System.out.println();
+		
+	}
+	public static void main(String[] args)
+	{
+		helloEverybody("홍길동");
+		helloEverybody("홍길동", "전우치");
+		helloEverybody("홍길동", "전우치", "손오공");
+	}
+}

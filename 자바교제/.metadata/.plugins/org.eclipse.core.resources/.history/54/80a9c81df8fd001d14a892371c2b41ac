@@ -1,0 +1,39 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/*
+외부자원을 사용할때 발생되는 예외
+처리방법1] "예외던지기"를 수행한다. 
+	main()메서드에 throws IOException 이와같이 기술하면 해당 메서드
+	내에서는 예외를 무시하겠다는 의미가 된다. 
+
+처리방법2] 예외가 발생한 지점을 try~catch문으로 직접 예외를 
+	처리한다. 
+ */
+public class Ex02_TryCatch
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		try
+		{
+			int num1 = sc.nextInt();
+			int num2 = 10 / num1;
+			System.out.println(num2);
+			System.out.println("Good bye~~!");
+		}
+		catch(ArithmeticException e)    // 0을 입력 했을 때 실행
+		{
+			String str = e.getMessage();
+			System.out.println(str);
+			if (str.equals("/ by zero"))
+				System.out.println("0으로 나눌 수 없습니다.");
+		}
+		catch(InputMismatchException e)  //
+		{
+			System.out.println(e.getMessage());
+			//e.printStackTrace();
+		}
+	}
+}

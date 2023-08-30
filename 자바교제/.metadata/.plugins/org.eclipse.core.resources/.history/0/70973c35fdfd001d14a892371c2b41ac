@@ -1,0 +1,9 @@
+public class Ex01_Object extends Object  // extends Object가 생략된 것 임.
+{
+	String name;
+	String getName()
+	{
+		return name;
+		
+	}
+}

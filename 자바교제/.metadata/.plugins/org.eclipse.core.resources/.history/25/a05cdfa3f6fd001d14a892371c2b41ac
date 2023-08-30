@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Ex01_ExceptionCase
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();   // 0 이면 에러가 나옴
+		int num2 = 10 / num1;
+		System.out.println(num2);
+		
+		//Mybook book1 = new MyBook();
+	}
+}

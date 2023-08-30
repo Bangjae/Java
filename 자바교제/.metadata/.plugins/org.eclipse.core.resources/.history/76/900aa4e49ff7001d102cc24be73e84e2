@@ -1,0 +1,9 @@
+package com.study;  // 경로는 다 소문자 글래스와 비교하기위해
+
+public class Banana
+{
+    public void showName()
+    {
+        System.out.println("My name is banana.");
+    }
+}

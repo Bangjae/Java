@@ -1,0 +1,13 @@
+public class Ex02_PackageUse
+{
+    public static void main(String[] args)
+    {
+        Apple apple = new Apple();
+        apple.showName();
+        
+        //Banana banana = new Banana();   <= 실행 안됨
+        com.study.Banana banana = new com.study.Banana();  
+        //반드시 경로도 같이 입력 해야함.
+        banana.showName();
+    }
+}
